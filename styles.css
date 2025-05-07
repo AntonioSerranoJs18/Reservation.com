@@ -20,6 +20,7 @@
     background-color: rgb(47, 85, 190);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .nav__logo {
     font-size: 24px;
     font-weight: bold;
@@ -32,11 +33,29 @@
     gap: 1rem;
 }
 
-.nav__icon{
-    color: white;
+.nav__icon {
     width: 30px;
     height: 30px;
     margin-right: 10px;
+}
+
+.nav__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav__icon:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav__icon img {
+    width: 20px;
+    height: 20px;
 }
 
 .nav__links {
@@ -51,17 +70,17 @@
 }
 
 .nav__links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     text-decoration: none;
     padding: 8px 12px;
-    transition: background-color 0.3s ease;
     border-radius: 4px;
-  }
-  
-  .nav__links a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
+    transition: background-color 0.3s ease;
+    height: 30px;
+}
 
-  img {
-    color: white;
-  }
+.nav__links a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
